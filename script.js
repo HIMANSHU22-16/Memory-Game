@@ -1,4 +1,4 @@
-8
+
    
     
          alert("\n \n \n  RULES: CLICK ON ANY OF THESE CARDS AND SOLVE IT IN 30sec 👍 , \n GOOD LUCK 😃❤️ \n LET'S START THE GAME 😍. \n")
