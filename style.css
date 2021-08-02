@@ -35,13 +35,18 @@ body {
     padding: 5px 10px;
     font-size: 20px;
     position: absolute;
+    border: 2px solid white;
     border-radius: 6px;
     top: 22%;
     left: 28%;
     transition: 0.5s ;  
     cursor: pointer;
   }
- 
+  body header .refresh-btn:hover{
+    background-color: #FF2151;
+    border: none;
+  }
+      
   .game {
     height: 85vh;
     width: 100%;
