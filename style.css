@@ -1,0 +1,159 @@
+body {
+    background: #FFEAC9;
+    color: white;
+    font-family: arial;
+  }
+  body header {
+    height: 10vh;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    padding-top: 25px;
+  }
+  @media screen and (min-width: 700px) {
+    body header {
+      width: 700px;
+    }
+  }
+
+  
+  body header .timer {
+    position: absolute;
+    top: 6%;
+    left: 5%;
+    font-size: 23px;
+    background: #FF2151;
+    width: 10vh;
+    height: 10vh;
+    line-height: 10vh;
+    border-radius: 5vh;
+    text-align: center;
+  }
+  body header .refresh-btn{
+    color: #fff;
+    background: #f39c12;
+    padding: 5px 10px;
+    font-size: 20px;
+    position: absolute;
+    border-radius: 6px;
+    top: 22%;
+    left: 26%;
+    transition: 0.5s ;  
+    cursor: pointer;
+  }
+ 
+  .game {
+    height: 85vh;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 700px) {
+    .game {
+      width: 700px;
+    }
+    .timer{
+      left: 32%;
+    }
+  }
+  .flip-container {
+    -webkit-perspective: 1000;
+    -moz-perspective: 1000;
+    perspective: 1000;
+    height: 19%;
+    margin: 1%;
+    cursor: pointer;
+  }
+  .flip-container.flip .flipper {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+  }
+  .flip-container, .front, .back {
+    width: 20%;
+    float: left;
+    padding-left: 7px;
+    border-radius: 12px;
+  }
+  .flipper {
+    -webkit-transition: 0.6s;
+    -moz-transition: 0.6s;
+    transition: 0.6s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    -o-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    height: 100%;
+    position: relative;
+  }
+  .flipper .front, .flipper .back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -ms-backface-visibility: visible;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-shadow: #FFCCA9 0 8px 2px;
+  }
+  .flipper .front {
+    -webkit-transform: rotateY(0deg);
+    -moz-transform: rotateY(0deg);
+    -ms-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    background: #FFAD29;
+  }
+  .flipper .back {
+    -webkit-transform: rotateY(180deg);
+    -moz-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    border: 1px solid #E8E8E8;
+  }
+
+  /* @media screen and (min-width: 37.4375em) {
+    .flip-container, .front, .backe {
+      width: 19%;
+      height: 17%;
+    }
+  } */
+
+  #c {
+    background: white url("./images/c.png") no-repeat center;
+    background-size: contain;
+  }
+  #cpp {
+    background: white url("./images/c++.png") no-repeat center;
+    background-size: contain;
+  }
+  #java {
+    background: white url("./images/java.png") no-repeat center;
+    background-size: contain;
+  }
+  #html {
+    background: white url("./images/html.png") no-repeat center;
+    background-size: contain;
+  }
+  #css {
+    background: white url("./images/css3.png") no-repeat center;
+    background-size: contain;
+  }
+  #js {
+    background: white url("./images/javascript.jpeg") no-repeat center;
+    background-size: contain;
+  }
+  #react {
+    background: white url("./images/react.png") no-repeat center;
+    background-size: contain;
+  }
+  #python {
+    background: white url("./images/python.jfif") no-repeat center;
+    background-size: contain;
+  }
+  
